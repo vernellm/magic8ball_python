@@ -14,7 +14,7 @@ answer = ""
 
 # Initializing random number generator
 
-random_number = random.randint(1, 9)
+random_number = random.randint(1, 12)
 
 # Testing for random numbers
 # print(random_number)
@@ -37,11 +37,25 @@ elif random_number == 7:
 elif random_number == 8:
     answer = "Outlook not so good"
 elif random_number == 9:
-    answer = "YVery doubtful"
+    answer = "Very doubtful"
+elif random_number == 10:
+    answer = "Are you serious?"
+elif random_number == 11:
+    answer = "I believe you're asking the wrong 8 Ball"
+elif random_number == 12:
+    answer = "Let me check with the 9 Ball"
 else:
     answer = "Error"
     
-# Printing the question and Magic 8Ball answer
-print(name + " asks: " + question) # Asking the question
 
+    
+# Error handling: No name or question was given
+if question == "":
+    print("There is no question for the 8 Ball to answer :/")
+elif (name == "") and (question != ""):
+    print("Question: " + question) # Asking the question
+else:
+    # Printing the question and Magic 8Ball answer
+    print(name + " asks: " + question) # Asking the question
+    
 print("Magic 8Ball's answer: " + answer) # 8Ball answer
