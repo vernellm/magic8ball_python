@@ -49,7 +49,7 @@ else:
     
 
     
-# Error handling: No name or question was given
+# Handle cases where no name or question is provided
 if question == "":
     print("There is no question for the 8 Ball to answer :/")
 elif (name == "") and (question != ""):
