@@ -19,6 +19,7 @@ random_number = random.randint(1, 9)
 # Testing for random numbers
 # print(random_number)
 
+# Core logic for Magic 8Ball answers using an if / elif / else
 if random_number == 1:
     answer = "Yes - definitely"
 elif random_number == 2:
@@ -34,8 +35,13 @@ elif random_number == 6:
 elif random_number == 7:
     answer = "My sources say no"
 elif random_number == 8:
-    answer = "Outlook not so goo"
+    answer = "Outlook not so good"
 elif random_number == 9:
     answer = "YVery doubtful"
 else:
     answer = "Error"
+    
+# Printing the question and Magic 8Ball answer
+print(name + " asks: " + question) # Asking the question
+
+print("Magic 8Ball's answer: " + answer) # 8Ball answer
